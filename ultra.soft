@@ -1,0 +1,138 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local UltraSoft = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local title = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local ChariotsWare = Instance.new("TextButton")
+local C00lkid = Instance.new("TextButton")
+local SoftVortex = Instance.new("TextButton")
+local telegram = Instance.new("TextLabel")
+local openmain = Instance.new("Frame")
+local open = Instance.new("TextButton")
+
+--Properties:
+
+UltraSoft.Name = "UltraSoft"
+UltraSoft.Parent = game.CoreGui
+UltraSoft.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = UltraSoft
+main.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+main.Position = UDim2.new(0.137348652, 0, 0.1819392, 0)
+main.Size = UDim2.new(0, 989, 0, 486)
+main.Visible = false
+main.Active = true
+main.Draggable = true
+
+title.Name = "title"
+title.Parent = main
+title.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+title.Size = UDim2.new(0, 933, 0, 50)
+title.Font = Enum.Font.SourceSans
+title.Text = "Ultra Soft"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 14.000
+title.TextWrapped = true
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+close.Position = UDim2.new(0.943377078, 0, 0, 0)
+close.Size = UDim2.new(0, 56, 0, 50)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(255, 255, 255)
+close.TextScaled = true
+close.TextSize = 14.000
+close.TextWrapped = true
+close.MouseButton1Down:connect(function()
+	main.Visible = false
+	openmain.Visible = true
+end)
+
+ChariotsWare.Name = "ChariotsWare"
+ChariotsWare.Parent = main
+ChariotsWare.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ChariotsWare.Position = UDim2.new(0, 0, 0.115226328, 0)
+ChariotsWare.Size = UDim2.new(0, 200, 0, 50)
+ChariotsWare.Font = Enum.Font.SourceSans
+ChariotsWare.Text = "Chariots Ware"
+ChariotsWare.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChariotsWare.TextScaled = true
+ChariotsWare.TextSize = 14.000
+ChariotsWare.TextWrapped = true
+ChariotsWare.MouseButton1Down:connect(function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Rippeed/DaHoodinary/main/chariotsware"))()
+end)
+
+C00lkid.Name = "C00lkid"
+C00lkid.Parent = main
+C00lkid.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+C00lkid.Position = UDim2.new(0, 0, 0.240740746, 0)
+C00lkid.Size = UDim2.new(0, 200, 0, 50)
+C00lkid.Font = Enum.Font.SourceSans
+C00lkid.Text = "C00lkid Gui"
+C00lkid.TextColor3 = Color3.fromRGB(255, 255, 255)
+C00lkid.TextScaled = true
+C00lkid.TextSize = 14.000
+C00lkid.TextWrapped = true
+C00lkid.MouseButton1Down:connect(function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/AwNot/Login/main/C00lkid"))()
+end)
+
+SoftVortex.Name = "SoftVortex"
+SoftVortex.Parent = main
+SoftVortex.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SoftVortex.Position = UDim2.new(0, 0, 0.370370358, 0)
+SoftVortex.Size = UDim2.new(0, 200, 0, 50)
+SoftVortex.Font = Enum.Font.SourceSans
+SoftVortex.Text = "SoftVortex"
+SoftVortex.TextColor3 = Color3.fromRGB(255, 255, 255)
+SoftVortex.TextScaled = true
+SoftVortex.TextSize = 14.000
+SoftVortex.TextWrapped = true
+SoftVortex.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/SoftVortex/1.5/main/1.55"),true))()
+end)
+
+telegram.Name = "telegram"
+telegram.Parent = main
+telegram.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+telegram.BackgroundTransparency = 1.000
+telegram.Position = UDim2.new(0.796764433, 0, 0.913580239, 0)
+telegram.Size = UDim2.new(0, 200, 0, 50)
+telegram.Font = Enum.Font.SourceSans
+telegram.Text = "t.me/ultra_soft"
+telegram.TextColor3 = Color3.fromRGB(255, 255, 255)
+telegram.TextScaled = true
+telegram.TextSize = 14.000
+telegram.TextWrapped = true
+
+openmain.Name = "openmain"
+openmain.Parent = UltraSoft
+openmain.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+openmain.Position = UDim2.new(0, 0, 0.402631581, 0)
+openmain.Size = UDim2.new(0, 50, 0, 50)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+open.Size = UDim2.new(0, 50, 0, 50)
+open.Font = Enum.Font.SourceSans
+open.Text = "U"
+open.TextColor3 = Color3.fromRGB(255, 255, 255)
+open.TextScaled = true
+open.TextSize = 14.000
+open.TextWrapped = true
+open.MouseButton1Down:connect(function()
+	openmain.Visible = false
+	main.Visible = true
+end)
